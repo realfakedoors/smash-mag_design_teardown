@@ -2,6 +2,14 @@ div, span, li {
   border-radius: 10px;
 }
 
+/* Typography */
+
+.header-container, .main-content-wrapper {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: white;
+}
+
 /* Header */
 
 .header-container {
@@ -14,9 +22,15 @@ div, span, li {
   background-color: #f2f2f2;
 }
 
-.header-box {
+.header-box, .footer-box {
+  display: flex;
   width: 100%;
   margin: auto 2px;
+  
+  align-items: center;
+  justify-content: center;
+  
+  font-size: 22px;
 }
 
 .header-box.small,
@@ -39,10 +53,13 @@ div, span, li {
 
 .title-box {  
   margin: 45px auto;
+  padding: 5px;
   height: 100px;
   width: 430px;
   
   background-color: #0d0d0d;
+  font-size: 44px;
+  text-align: center;
 }
 
 .color-changer-box {
@@ -50,9 +67,14 @@ div, span, li {
   top: 180px;
   right: 0;
   
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 50px;
-  
   width: 250px;
+  
+  font-size: 20px;
+  text-align: center;
 }
 
 .articles-section, 
@@ -83,9 +105,13 @@ div, span, li {
 .author-name {
   position: absolute;
   
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 120px;
   height: 40px;
   margin: 20px 120px 0;
+  padding: 5px;
   
   background-color: #cccccc;
 }
@@ -95,8 +121,10 @@ div, span, li {
 .listed-title {
   height: 100px;
   width: auto;
+  padding: 10px;
   
   background-color: #333333;
+  font-size: 30px;
 }
 
 .article-title {
@@ -107,7 +135,11 @@ div, span, li {
   height: 40px;
   width: 120px;
   
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 5px 20px 0;
+  padding: 5px;
   background-color: #ff9900;
 }
 
@@ -136,9 +168,14 @@ div, span, li {
 
 .subarticle-date, 
 .subarticle-author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 30px;
   width: 90px;
   margin: 20px;
+  
+  font-size: 15px;
 }
 
 .subarticle-date {
@@ -158,8 +195,10 @@ div, span, li {
   width: auto;
   height: 120px;
   margin: 20px;
+  padding: 5px;
   
   background-color: #e6e6e6;
+  color: #666666;
 }
 
 .listed-title {
@@ -170,6 +209,7 @@ div, span, li {
   height: 25px;
   width: auto;
   margin: 15px;
+  padding: 5px;
 }
 
 /* Footer */
@@ -186,6 +226,9 @@ div, span, li {
   position: relative;
   top: 60px;
   
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 20px;
   width: 400px;
   margin: auto;
